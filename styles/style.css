@@ -52,6 +52,7 @@ body{
 .cover {
     position: relative; /* Для абсолютного позиционирования оверлея */
     min-height: 500px; /* Минимальная высота секции */
+    background-image: url("../img/0ebc4c3a92bfb672f477e421e7738fd6416ff19b.jpg");
 }
 .overlay {
     position: absolute;
