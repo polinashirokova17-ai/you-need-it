@@ -1,0 +1,135 @@
+/* style.css */
+.html
+body{
+  height: 100%;
+}
+
+.body{
+  display: flex;
+  min-width: 1100px;
+  background-color: white;
+}
+
+
+/* Шапка сайта */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 равные колонки: меню, логотип, адрес */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    height: 293px;
+}
+
+/* Навигация в шапке */
+.header__menu {}
+.header__links-list {
+    display: flex; /* Горизонтальное меню */
+    gap: 22px; /* Расстояние между пунктами меню */
+    list-style: circle; /* Маркеры в виде кружков */
+}
+.header__links-list-item {}
+.header__link {}
+
+/* Логотип */
+.header__logo {}
+.header__logo-image {
+  width: 129.11196899414062;
+  height: 104.6517562866211;
+}
+
+/* Блок адреса */
+.address {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    align-items: flex-start; /* Выравнивание по левому краю */
+}
+.header__address {
+     justify-self: end; /* Выравнивание блока адреса по правому краю колонки */
+}
+.address__link {}
+
+
+/* Секция обложки */
+.cover {
+    position: relative; /* Для абсолютного позиционирования оверлея */
+    min-height: 500px; /* Минимальная высота секции */
+}
+.overlay {
+    position: absolute;
+    inset: 0; /* Заполняет весь родительский контейнер */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+}
+.cover__title {}
+.aligned-text {} /* Класс для выравнивания строк заголовка */
+.cover__description {}
+.cover__description-text {}
+.cover__description-button {} /* Кнопка призыва к действию */
+
+/* Секция лотов */
+.lots {}
+.lots__heading {}
+.lots__card-list {
+    display: flex;
+    gap: 20px; /* Расстояние между карточками */
+    list-style: none; /* Убираем стандартные маркеры списка */
+}
+.lots__card-list-item {}
+.card-link {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
+.card {
+    position: relative; /* Для абсолютного позиционирования оверлея */
+    min-height: 300px; /* Минимальная высота карточки */
+}
+.card_type_film {} /* Модификатор для фона фильма */
+.card_type_book {} /* Модификатор для фона книги */
+.card_type_picture {} /* Модификатор для фона картины */
+.card__title {}
+.card__text {}
+.lots__look-more-link {} /* Ссылка "посмотреть больше" */
+
+
+/* Секция "Об аукционе" */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Две колонки: 1/3 и 2/3 ширины */
+}
+.about__column {}
+.about__logo {
+    display: flex;
+    justify-content: center; /* Центрирование логотипа */
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Круглая форма */
+    background-color: black;
+}
+.about__logo-image {}
+.about__title {}
+.about__text {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение параграфов */
+    gap: 20px;
+}
+
+
+/* Подвал сайта */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Три равные колонки */
+}
+.footer__menu {}
+.footer__menu-list {
+    text-align: center;
+    list-style: none;
+}
+.footer__menu-list-item {}
+.footer__menu-link {}
+.footer__social-list {
+    display: flex;
+    justify-self: end; /* Выравнивание по правому краю колонки */
+    gap: 20px;
+    list-style: none;
+}
+.footer__social-list-item {}
+.footer__social-link {}
+.footer__social-icon {}

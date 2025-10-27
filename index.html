@@ -3,10 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js"><!-- Потом свои стили -->
-    <title>Practicum</title>
+    <title>Оно тебе надо</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <!--  Шрифты -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <!--  Глобальные стили -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--  Локальные стили -->
   </head>
   <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+       <!-- Основная навигация -->
+      <nav class="header_menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item">
+            <a href="#cover_title" class="header__link">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#lots__heading" class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#about__title" class="header__link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Логотип - ссылка на главную страницу -->
+      <a href="/" class="header_logo">
+        <img src="img/Vector.png" alt="Логотип Оно тебе надо" class="header__logo-image">
+      </a>
+       <!-- Контактная информация -->
+      <address class="header_address">
+        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
+        <a class="address__link">наб. Принсенграхт 263- 265, Амстердам</a>
+      </address>
+    </header>
+
+     <!-- Основное содержимое страницы -->
+    <main class="main">
+        <!-- Секция 1: Обложка -->
+      <section class="cover">
+         <!-- Полупрозрачный оверлей поверх фона -->
+            <div class="overlay"></div>
+        <!-- Главный заголовок страницы -->
+        <h1 id="cover_title">
+          <!-- Каждая строка заголовка в отдельном span для стилизации -->
+                <span class="aligned-text">ОНО</span>
+                <span class="aligned-text">ТЕБЕ</span>
+                <span class="aligned-text">НАДО</span>
+        </h1>
+        <img src="img/0ebc4c3a92bfb672f477e421e7738fd6416ff19b.jpg" alt="цветок лотоса">
+        <!-- Блок с описанием и кнопкой призыва к действию -->
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, вкоторые никто не верил</p>
+          <!-- Сделать вставку -->
+          <button class="cover__description-button">Сделать ставку</button>
+        </div>
+      </section>
+        <!-- Секция 2: Карточки лотов -->
+      <section class="lots">
+        <h2 id="lots__heading">Заголовок</h2>
+        <!-- Список карточек -->
+        <ul class="lots__card-list">
+          <!-- Карточка 1 -->
+          <li class="lots__card-list-item">
+             <!-- Карточка обернута в ссылку -->
+            <a href="" class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+           <!-- Карточка 2 -->
+          <li class="lots__card-list-item">
+            <a href="" class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+           <!-- Карточка 3 -->
+          <li class="lots__card-list-item">
+            <a href="" class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+          <!-- Ссылка для просмотра всех лотов -->
+          <a class="lots__look-more-link" href="">scr</a>
+        </ul>
+      </section>
+
+       <!-- Секция 3: Информация об аукционе -->
+      <section class="about">
+         <!-- Левая колонка с логотипом -->
+        <div class="about__logo"></div>
+        <h2 id="about__title">Заголовок</h2>
+        <!-- Правая колонка с текстом -->
+        <div class="about_column">
+          <p class="about__text"></p>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+       <!-- Контактная информация -->
+      <address class="footer_addres"></address>
+       
+      <!-- Навигация в подвале -->
+      <nav class="footer__menu">
+        Меню
+
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item"></li>
+          <li class="footer__menu-list-item"></li>
+          <li class="footer__menu-list-item"></li>
+        </ul>
+      </nav>
+       <!-- Социальные сети -->
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item"></li>
+        <li class="footer__social-list-item"></li>
+        <li class="footer__social-list-item"></li>
+      </ul>
+    </footer>
   </body>
 </html>
