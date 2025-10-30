@@ -1,72 +1,121 @@
-/* style.css */
-.html
-body{
-  height: 100%;
-}
-
-.body{
-  display: flex;
-  min-width: 1100px;
-  background-color: white;
-}
-
 
 /* Шапка сайта */
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 равные колонки: меню, логотип, адрес */
+    grid-template-columns: 1fr min-content 1fr; /* 3 равные колонки: меню, логотип, адрес */
     align-items: center; /* Вертикальное выравнивание по центру */
-    height: 293px;
+    padding: 95px 50px 100px;
+    
 }
 
 /* Навигация в шапке */
-.header__menu {}
 .header__links-list {
     display: flex; /* Горизонтальное меню */
     gap: 22px; /* Расстояние между пунктами меню */
     list-style: circle; /* Маркеры в виде кружков */
 }
-.header__links-list-item {}
-.header__link {}
 
-/* Логотип */
-.header__logo {}
-.header__logo-image {
-  width: 129.11196899414062;
-  height: 104.6517562866211;
+.header__links-list-item_no-bullit{
+    list-style: none;
+}
+.header__link_active{
+    color: black;
+    text-decoration: none;
+}
+.header__link{
+    color: black;
 }
 
 /* Блок адреса */
-.address {
-    display: flex;
-    flex-direction: column; /* Вертикальное расположение ссылок */
-    align-items: flex-start; /* Выравнивание по левому краю */
-}
 .header__address {
-     justify-self: end; /* Выравнивание блока адреса по правому краю колонки */
+    
 }
-.address__link {}
+
+.header_address-link{
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration-skip-ink: none;  
+}
 
 
 /* Секция обложки */
 .cover {
-    position: relative; /* Для абсолютного позиционирования оверлея */
-    min-height: 500px; /* Минимальная высота секции */
-    background-image: url("../img/0ebc4c3a92bfb672f477e421e7738fd6416ff19b.jpg");
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 757px;
+    padding: 50px;
+    background-image: url("../img/lotus-flower.jpg"); /*Фон*/
+    background-position: center;
+    background-size: cover;
+    
 }
 .overlay {
     position: absolute;
     inset: 0; /* Заполняет весь родительский контейнер */
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
 }
-.cover__title {}
-.aligned-text {} /* Класс для выравнивания строк заголовка */
-.cover__description {}
-.cover__description-text {}
-.cover__description-button {} /* Кнопка призыва к действию */
+.cover_title {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700; /* Bold */
+    font-size: 100px;
+    text-transform: uppercase;
+   
+}
+.aligned-text{
+
+} 
+.aligned-text-center{
+    
+   
+    
+}
+
+.aligned-text-right{
+
+}
+/* Класс для выравнивания строк заголовка */
+.cover__description {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.cover__description-text {
+    display: flex;
+    align-items: start;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+.cover__description-button {
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 12px 32px;
+    color:  rgba(255, 255, 255, 1);
+    font-size: 22px;
+    text-transform: uppercase;
+    background: transparent;
+
+
+} /* Кнопка призыва к действию */
 
 /* Секция лотов */
-.lots {}
+.lots {
+    
+}
 .lots__heading {}
 .lots__card-list {
     display: flex;
@@ -81,9 +130,15 @@ body{
     position: relative; /* Для абсолютного позиционирования оверлея */
     min-height: 300px; /* Минимальная высота карточки */
 }
-.card_type_film {} /* Модификатор для фона фильма */
-.card_type_book {} /* Модификатор для фона книги */
-.card_type_picture {} /* Модификатор для фона картины */
+.card_type_film {
+    background-image: url("../img/film.jpg");
+} /* Модификатор для фона фильма */
+.card_type_book {
+    background-image: url("../img/book.png");
+} /* Модификатор для фона книги */
+.card_type_picture {
+    background-image: url("../img/picture.jpg");
+} /* Модификатор для фона картины */
 .card__title {}
 .card__text {}
 .lots__look-more-link {} /* Ссылка "посмотреть больше" */

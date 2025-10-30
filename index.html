@@ -1,133 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо</title>
 
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <!--  Шрифты -->
-    <link rel="stylesheet" href="styles/global.css" />
-    <!--  Глобальные стили -->
-    <link rel="stylesheet" href="styles/style.css" />
-    <!--  Локальные стили -->
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header class="header">
-       <!-- Основная навигация -->
-      <nav class="header_menu">
-        <ul class="header__links-list">
-          <li class="header__links-list-item">
-            <a href="#cover_title" class="header__link">главная</a>
-          </li>
-          <li class="header__links-list-item">
-            <a href="#lots__heading" class="header__link">посмотреть лоты</a>
-          </li>
-          <li class="header__links-list-item">
-            <a href="#about__title" class="header__link">об аукционе</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Логотип - ссылка на главную страницу -->
-      <a href="/" class="header_logo">
-        <img src="img/logo.svg" alt="Логотип Оно тебе надо" class="header__logo-image">
-      </a>
-       <!-- Контактная информация -->
-      <address class="header_address">
-        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
-        <a class="address__link">наб. Принсенграхт 263- 265, Амстердам</a>
-      </address>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оно тебе надо</title>
 
-     <!-- Основное содержимое страницы -->
-    <main class="main">
-        <!-- Секция 1: Обложка -->
-      <section class="cover">
-         <!-- Полупрозрачный оверлей поверх фона -->
-            <div class="overlay"></div>
-        <!-- Главный заголовок страницы -->
-        <h1 id="cover_title">
-          <!-- Каждая строка заголовка в отдельном span для стилизации -->
-                <span class="aligned-text">ОНО</span>
-                <span class="aligned-text">ТЕБЕ</span>
-                <span class="aligned-text">НАДО</span>
-        </h1>
-        <!-- Блок с описанием и кнопкой призыва к действию -->
-        <div class="cover__description">
-          <p class="cover__description-text">Аукцион вещей, вкоторые никто не верил</p>
-          <!-- Сделать вставку -->
-          <button class="cover__description-button">Сделать ставку</button>
-        </div>
-      </section>
-        <!-- Секция 2: Карточки лотов -->
-      <section class="lots">
-        <h2 id="lots__heading">Заголовок</h2>
-        <!-- Список карточек -->
-        <ul class="lots__card-list">
-          <!-- Карточка 1 -->
-          <li class="lots__card-list-item">
-             <!-- Карточка обернута в ссылку -->
-            <a href="" class="card-link">
-              <article class="card card_type_film">
-                <div class="overlay"></div>
-              </article>
-            </a>
-          </li>
-           <!-- Карточка 2 -->
-          <li class="lots__card-list-item">
-            <a href="" class="card-link">
-              <article class="card card_type_book">
-                <div class="overlay"></div>
-              </article>
-            </a>
-          </li>
-           <!-- Карточка 3 -->
-          <li class="lots__card-list-item">
-            <a href="" class="card-link">
-              <article class="card card_type_picture">
-                <div class="overlay"></div>
-              </article>
-            </a>
-          </li>
-          <!-- Ссылка для просмотра всех лотов -->
-          <a class="lots__look-more-link" href="">scr</a>
-        </ul>
-      </section>
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <!--  Шрифты -->
+  <link rel="stylesheet" href="styles/global.css" />
+  <!--  Глобальные стили -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!--  Локальные стили -->
+</head>
 
-       <!-- Секция 3: Информация об аукционе -->
-      <section class="about">
-         <!-- Левая колонка с логотипом -->
-        <div class="about__logo"></div>
-        <h2 id="about__title">Заголовок</h2>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <!-- Основная навигация -->
+    <nav class="header_menu">
+      <ul class="header__links-list">
+        <li class="header__links-list-item header__links-list-item_no-bullit">
+          <a href="#cover_title" class="header__link header__link_active">главная</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#lots__heading" class="header__link">посмотреть лоты</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#about__title" class="header__link">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Логотип - ссылка на главную страницу -->
+    <a href="/" class="header_logo">
+      <img src="img/logo.svg" alt="Логотип Оно тебе надо" class="header__logo-image">
+    </a>
+    <!-- Контактная информация -->
+    <address class="header_address">
+      <a href="tel:+99995555555" class="header_address-link">+9 999 555 5555</a><br>
+      <a href="mailto:info@sobaka.ge" class="header_address-link">info@sobaka.ge</a>
+      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    </address>
+  </header>
+
+  <!-- Основное содержимое страницы -->
+  <main class="main">
+    <!-- Секция 1: Обложка -->
+    <section class="cover">
+      <!-- Полупрозрачный оверлей поверх фона -->
+      <div class="overlay"></div>
+      <!-- Главный заголовок страницы -->
+      <h1 id="cover_title" class="cover_title">
+        
+          <p class="aligned-text">ОНО</p>
+          <p class="aligned-text-center">ТЕБЕ</p>
+          <p class="aligned-text-right">НАДО</p>
+       
+        <!-- Каждая строка заголовка в отдельном span для стилизации -->
+
+      </h1>
+      <!-- Блок с описанием и кнопкой призыва к действию -->
+      <div class="cover__description">
+        <p class="cover__description-text"> <span style="f"></span>Аукцион вещей, в которые никто не верил</p>
+        <!-- Сделать вставку -->
+        <button class="cover__description-button">Сделать ставку</button>
+      </div>
+    </section>
+    <!-- Секция 2: Карточки лотов -->
+    <section class="lots">
+      <h2 id="lots__heading">Лоты</h2>
+      <!-- Список карточек -->
+      <ul class="lots__card-list">
+        <!-- Карточка 1 -->
+        <li class="lots__card-list-item">
+          <!-- Карточка обернута в ссылку -->
+          <a href="#" class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции.
+                Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </article>
+          </a>
+        </li>
+        <!-- Карточка 2 -->
+        <li class="lots__card-list-item">
+          <a href="" class="card-link">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и истории
+                литературы,
+                начиная с античных времён. И это всё накладывается на эпическую поэму Гомера.
+                Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </article>
+          </a>
+        </li>
+        <!-- Карточка 3 -->
+        <li class="lots__card-list-item">
+          <a href="" class="card-link">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее
+                на инфузорию-туфельку. Ниже мой касс. И сейчас эти лоты стали культовыми.</p>
+            </article>
+          </a>
+        </li>
+        <!-- Ссылка для просмотра всех лотов -->
+        <a href="#" class="lots__look-more-link">посмотреть больше</a>
+      </ul>
+    </section>
+
+    <!-- Секция 3: Информация об аукционе -->
+    <section class="about">
+      <!-- Левая колонка с логотипом -->
+      <div class="about__logo"></div>
+      <h1 id="about__title">Заголовок</h2>
         <!-- Правая колонка с текстом -->
         <div class="about_column">
-          <p class="about__text"></p>
+          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
+            Наши лоты вообще не должны были попасть ни на один аукцион.
+            Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок?
+            Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные
+            критиками.
+            Непринятые и непонятные. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся
+            простоту
+            или сложность, сейчас без этих лотов невозможно представить современную культуру.
+            Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
         </div>
-      </section>
-    </main>
-    <!-- Подвал -->
-    <footer class="footer">
-       <!-- Контактная информация -->
-      <address class="footer_addres"></address>
-       
-      <!-- Навигация в подвале -->
-      <nav class="footer__menu">
-        Меню
+    </section>
+  </main>
+  <!-- Подвал -->
+  <footer class="footer">
+    <!-- Контактная информация -->
+    <address class="footer_addres">
+      <a href="tel:+99995555555">+9 999 555 5555</a><br>
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    </address>
 
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item"></li>
-          <li class="footer__menu-list-item"></li>
-          <li class="footer__menu-list-item"></li>
-        </ul>
-      </nav>
-       <!-- Социальные сети -->
-      <ul class="footer__social-list">
-        <li class="footer__social-list-item"></li>
-        <li class="footer__social-list-item"></li>
-        <li class="footer__social-list-item"></li>
+    <!-- Навигация в подвале -->
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a href="">главная</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="">об аукционе</a>
+        </li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+    <!-- Социальные сети -->
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item"></li>
+      <li class="footer__social-list-item"></li>
+      <li class="footer__social-list-item"></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
